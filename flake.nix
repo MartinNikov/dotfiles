@@ -38,7 +38,7 @@
     flake-parts,
     ...
   } @ inputs: let
-    defaultUser = "zlx";
+    defaultUser = "zahary";
     instantiateMachines = (import ./nixos/machines) {lib = nixpkgs.lib;};
   in
     flake-parts.lib.mkFlake {inherit inputs;} {
